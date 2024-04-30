@@ -1,0 +1,66 @@
+﻿@model pruebaasiservy.Models.Cabecera
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Cabecera</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Linea1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Linea1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Linea2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Linea2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Linea3)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Linea3)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Linea4)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Linea4)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Linea5)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Linea5)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Linea6)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Linea6)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Total)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Total)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
